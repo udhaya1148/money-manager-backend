@@ -8,12 +8,12 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS – allow your Vercel frontend + localhost (for dev)
+
 const corsOptions = {
   origin: [
-    'https://moneymanager-frontend-eight.vercel.app', // your Vercel frontend
-    'http://localhost:5173',                          // Vite dev
-    'http://localhost:3000'                           // optional
+    'https://moneymanager-frontend-eight.vercel.app', 
+    'http://localhost:5173',                         
+    'http://localhost:3000'                         
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
